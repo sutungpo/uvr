@@ -101,8 +101,8 @@ class  _audio_pre_():
 if __name__ == '__main__':
     device = 'cuda'
     is_half=True
-    model_path='uvr5_weights/2_HP-UVR.pth'
+    model_path='uvr5_weights/MDX23C-8KFFT-InstVoc_HQ.ckpt'
     pre_fun = _audio_pre_(model_path=model_path,device=device,is_half=True)
-    audio_path = 'audio.aac'
-    save_path = 'opt'
+    audio_path = '/kaggle/input/181xijing/1.m4a'
+    save_path = '/kaggle/working'
     pre_fun._path_audio_(audio_path , save_path,save_path)
